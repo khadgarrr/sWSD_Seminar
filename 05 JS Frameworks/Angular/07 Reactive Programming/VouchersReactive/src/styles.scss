@@ -1,0 +1,64 @@
+$dark-brown: #797474;
+$medium-brown: #ADA0A0;
+$occa: #F2F2F2;
+
+.spacer{
+    margin: 10px 0px;
+}
+
+.spacedRow{
+    margin-top: 1rem;
+}
+
+.section{
+    margin: 10px 0px 10px 0px;
+    padding: 15px 10px;    
+    border: 1px solid $medium-brown;
+    background-color: $occa;
+}
+
+body{
+    padding: 10px;
+    background-color:  $occa;
+}
+    
+.sidebar-module, .navbar-inverse{
+    background-color: $dark-brown;
+}
+
+.cmdPanel{
+    padding: 10px 10px;  
+    color: white;
+    background-color: $dark-brown;
+}
+
+.cmdPanelSmall{
+    padding: 5px;
+    margin: 10px 0px;
+    color: white;
+    background-color: $dark-brown;
+}
+
+.rightCell{
+    text-align: right;
+}
+
+.btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    background-color:  $occa;
+}
+
+.theme-green .bs-datepicker-head {
+    background-color: $dark-brown;
+}
+
+.theme-green .bs-datepicker-body table td.week span {
+    color:  $dark-brown;
+}
+
+.theme-green .bs-datepicker-body table td span.selected, .theme-green .bs-datepicker-body table td.selected span, .theme-green .bs-datepicker-body table td span[class*="select-"]:after, .theme-green .bs-datepicker-body table td[class*="select-"] span:after {
+    background-color: $dark-brown;
+}

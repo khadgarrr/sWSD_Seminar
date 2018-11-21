@@ -1,0 +1,6 @@
+[
+    {"url": "observablescurd", "title": "Observables CRUD", "component": "ObservableCrudComponent"},
+    {"url": "observables-basics", "title": "Observables Basics", "component": "SimpleObservableComponent"},    
+    {"url": "observables", "title": "Observables Dashboard", "component": "ObservablesComponent"},
+    {"url": "mousedomobs", "title": "Using Mouse & DOM evts", "component": "MouseDomObservablesComponent"}                
+]

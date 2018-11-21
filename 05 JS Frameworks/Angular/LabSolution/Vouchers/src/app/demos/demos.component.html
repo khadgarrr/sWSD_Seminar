@@ -1,0 +1,16 @@
+<div class="flexRow" [MatchHeight]="'panel'">
+    <div class="panel flexMenu">
+        <h4>{{title}}</h4>
+        <div>
+            <a *ngFor="let item of demos" [routerLink]="['', item.url]" [queryParams]="{title: item.title}">{{item.title}}</a>
+        </div>
+    </div>
+    <div class="flexSpacer"></div>
+
+    <div class="panel flexMain">
+        <h4>{{demoName}}</h4>
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

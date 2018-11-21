@@ -1,0 +1,15 @@
+
+.section{
+    margin: 10px 0px 10px 0px;
+    padding: 15px 10px;    
+    border: 1px solid #ADA0A0;
+    background-color: #F2F2F2
+}
+
+body{
+    padding: 10px;
+    background-color: #F2F2F2;}
+    
+.sidebar-module, .navbar-inverse{
+    background-color: #797474;
+}

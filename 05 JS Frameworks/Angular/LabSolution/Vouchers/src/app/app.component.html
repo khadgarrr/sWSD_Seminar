@@ -1,0 +1,13 @@
+<div class="flexCol">  
+    <app-navbar></app-navbar>
+    <div class="flexRow" [MatchHeight]="'panel'">
+      <div [class]="setMainDivWidth()">
+        <router-outlet></router-outlet>
+      </div>
+      <div [class]="setSpacer()"></div>
+      <div [class]="setSideDivWidth()">
+        <app-side-panel></app-side-panel>
+      </div>
+    </div>
+    <app-kpi-bar [style.display]="isDemo ? 'none' : 'block'"></app-kpi-bar>
+</div>

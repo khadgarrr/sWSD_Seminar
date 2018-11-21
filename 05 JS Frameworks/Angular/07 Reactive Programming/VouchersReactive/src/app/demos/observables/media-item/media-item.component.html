@@ -1,0 +1,4 @@
+<div class="box" [ngClass]="isPlaying===true ? 'playingItem' : 'upcomingItem'">
+    <div class="header">{{item.title}}</div>
+    <div class="startTime">Start Time: {{item.startTime | date : "mediumTime"}}</div>
+</div>

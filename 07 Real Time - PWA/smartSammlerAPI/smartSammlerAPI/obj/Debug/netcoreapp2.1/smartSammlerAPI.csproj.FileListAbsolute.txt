@@ -1,0 +1,84 @@
+D:\Classes\smartAngular6\07 Reactive Programming\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.deps.json
+D:\Classes\smartAngular6\07 Reactive Programming\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.runtimeconfig.json
+D:\Classes\smartAngular6\07 Reactive Programming\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.runtimeconfig.dev.json
+D:\Classes\smartAngular6\07 Reactive Programming\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.dll
+D:\Classes\smartAngular6\07 Reactive Programming\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.pdb
+D:\Classes\smartAngular6\07 Reactive Programming\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.csproj.CoreCompileInputs.cache
+D:\Classes\smartAngular6\07 Reactive Programming\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorAssemblyInfo.cache
+D:\Classes\smartAngular6\07 Reactive Programming\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorAssemblyInfo.cs
+D:\Classes\smartAngular6\07 Reactive Programming\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.AssemblyInfoInputs.cache
+D:\Classes\smartAngular6\07 Reactive Programming\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.AssemblyInfo.cs
+D:\Classes\smartAngular6\07 Reactive Programming\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorTargetAssemblyInfo.cache
+D:\Classes\smartAngular6\07 Reactive Programming\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.dll
+D:\Classes\smartAngular6\07 Reactive Programming\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.pdb
+D:\Classes\smartAngular6\07 Reactive Programming\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.csprojAssemblyReference.cache
+D:\Classes\smartMobile\00 SammlerService\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.deps.json
+D:\Classes\smartMobile\00 SammlerService\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.runtimeconfig.json
+D:\Classes\smartMobile\00 SammlerService\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.runtimeconfig.dev.json
+D:\Classes\smartMobile\00 SammlerService\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.dll
+D:\Classes\smartMobile\00 SammlerService\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.pdb
+D:\Classes\smartMobile\00 SammlerService\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.csprojAssemblyReference.cache
+D:\Classes\smartMobile\00 SammlerService\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.csproj.CoreCompileInputs.cache
+D:\Classes\smartMobile\00 SammlerService\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorAssemblyInfo.cache
+D:\Classes\smartMobile\00 SammlerService\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorAssemblyInfo.cs
+D:\Classes\smartMobile\00 SammlerService\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.AssemblyInfoInputs.cache
+D:\Classes\smartMobile\00 SammlerService\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.AssemblyInfo.cs
+D:\Classes\smartMobile\00 SammlerService\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorTargetAssemblyInfo.cache
+D:\Classes\smartMobile\00 SammlerService\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.dll
+D:\Classes\smartMobile\00 SammlerService\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.pdb
+D:\Classes\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.deps.json
+D:\Classes\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.runtimeconfig.json
+D:\Classes\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.runtimeconfig.dev.json
+D:\Classes\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.dll
+D:\Classes\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.pdb
+D:\Classes\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.csprojAssemblyReference.cache
+D:\Classes\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.csproj.CoreCompileInputs.cache
+D:\Classes\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorAssemblyInfo.cache
+D:\Classes\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorAssemblyInfo.cs
+D:\Classes\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.AssemblyInfoInputs.cache
+D:\Classes\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.AssemblyInfo.cs
+D:\Classes\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorTargetAssemblyInfo.cache
+D:\Classes\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.dll
+D:\Classes\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.pdb
+G:\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.deps.json
+G:\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.runtimeconfig.json
+G:\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.runtimeconfig.dev.json
+G:\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.dll
+G:\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.pdb
+G:\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.csprojAssemblyReference.cache
+G:\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.csproj.CoreCompileInputs.cache
+G:\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorAssemblyInfo.cache
+G:\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorAssemblyInfo.cs
+G:\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.AssemblyInfoInputs.cache
+G:\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.AssemblyInfo.cs
+G:\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorTargetAssemblyInfo.cache
+G:\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.dll
+G:\smartMobile\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.pdb
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.deps.json
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.runtimeconfig.json
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.runtimeconfig.dev.json
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.dll
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.pdb
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.csprojAssemblyReference.cache
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.csproj.CoreCompileInputs.cache
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorAssemblyInfo.cache
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorAssemblyInfo.cs
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.AssemblyInfoInputs.cache
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.AssemblyInfo.cs
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorTargetAssemblyInfo.cache
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.dll
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.pdb
+D:\modernWebStack\09 Real Time - PWA\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.deps.json
+D:\modernWebStack\09 Real Time - PWA\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.runtimeconfig.json
+D:\modernWebStack\09 Real Time - PWA\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.runtimeconfig.dev.json
+D:\modernWebStack\09 Real Time - PWA\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.dll
+D:\modernWebStack\09 Real Time - PWA\smartSammlerAPI\smartSammlerAPI\bin\Debug\netcoreapp2.1\smartSammlerAPI.pdb
+D:\modernWebStack\09 Real Time - PWA\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.csprojAssemblyReference.cache
+D:\modernWebStack\09 Real Time - PWA\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.csproj.CoreCompileInputs.cache
+D:\modernWebStack\09 Real Time - PWA\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorAssemblyInfo.cache
+D:\modernWebStack\09 Real Time - PWA\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorAssemblyInfo.cs
+D:\modernWebStack\09 Real Time - PWA\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.AssemblyInfoInputs.cache
+D:\modernWebStack\09 Real Time - PWA\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.AssemblyInfo.cs
+D:\modernWebStack\09 Real Time - PWA\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.RazorTargetAssemblyInfo.cache
+D:\modernWebStack\09 Real Time - PWA\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.dll
+D:\modernWebStack\09 Real Time - PWA\smartSammlerAPI\smartSammlerAPI\obj\Debug\netcoreapp2.1\smartSammlerAPI.pdb

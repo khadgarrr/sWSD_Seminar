@@ -1,0 +1,88 @@
+@import "./styles/flex.scss";
+
+.spacer{
+    margin: 10px 0px;
+}
+
+.spacedRow{
+    margin-top: 1rem;
+}
+
+$section-border-col: #ADA0A0;
+$section-back-col: rgb(231, 231, 231);
+
+.section{
+    margin: 10px 0px 10px 0px;
+    padding: 15px 10px;    
+    border: 1px solid $section-border-col;
+    background-color: $section-back-col;
+}
+
+body{
+    padding: 10px;
+    background-color:  $section-back-col;
+}
+
+$sidebar-back-col: #797474;
+
+.sidebar-module, .navbar-inverse{
+    background-color: $sidebar-back-col;
+}
+
+$panelBackground: white;
+$panel-back-col: #797474;
+
+.panel {
+    background-color: $panelBackground;    
+    padding: 20px;
+}
+
+inner-panel{
+    padding: 20px 10px;
+}
+
+.cmdPanel{
+    padding: 10px 10px;  
+    color:$panelBackground;
+    background-color: $panel-back-col;
+}
+
+.cmdPanelSmall{
+    padding: 5px;
+    margin: 10px 0px;
+    color: $panelBackground;
+    background-color: $panel-back-col;
+}
+
+.rightCell{
+    text-align: right;
+}
+
+$buttonCol: red;
+$buttonFontColLight: white;
+$buttonFontCol:  #797474;
+
+.theme-green .bs-datepicker-head {
+    background-color: $panel-back-col;
+}
+
+.theme-green .bs-datepicker-body table td.week span {
+    color:  $panel-back-col;
+}
+
+$oddRowCol: #F2F2F2;
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: $oddRowCol;
+ }
+
+ @mixin mouse {
+    cursor: pointer;
+}
+
+ .table-cmd{
+     color: $buttonFontCol;
+     @include mouse;     
+     padding: 5px 00px;     
+ }
+

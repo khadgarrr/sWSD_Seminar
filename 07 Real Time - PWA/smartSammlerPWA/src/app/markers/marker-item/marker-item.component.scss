@@ -1,0 +1,47 @@
+@import "varsAndMixins";
+agm-map {
+  height: 250px;
+}
+
+textarea {
+  border-style: dotted;
+  border-width: 1px;
+  border-color: $barCol;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container > * {
+  width: 100%;
+}
+
+.card {
+  margin: 5px 0;
+}
+
+.imgMain {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.bMargin {
+  margin-bottom: 20px;
+}
+
+.divGPS {
+  margin-bottom: 20px;
+}
+
+.leftCell {
+  text-align: left;
+}
+
+.rightCell {
+  text-align: right;
+  margin-right: 20px;
+}

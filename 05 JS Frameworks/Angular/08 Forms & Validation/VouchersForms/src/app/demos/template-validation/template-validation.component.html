@@ -1,0 +1,72 @@
+<div class="section">
+  <h4>Voucher Form - Template Driven Validation</h4><br>
+  <form #personForm="ngForm" (ngSubmit)="savePerson(personForm)" role="form" novalidate>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" placeholder="Enter name" 
+        name="personName" [(ngModel)]="person.name" required minlength="4">
+      <em *ngIf="personForm.controls['personName']?.invalid">
+        Name is required (minimum 4 characters).
+      </em>
+    </div>
+    <div class="form-group">
+      <label for="email">E-Mail</label>
+      <input type="text" class="form-control" placeholder="Enter E-Mail"  
+        name="personMail" [(ngModel)]="person.mail" required email>
+      <em *ngIf="personForm.controls['personMail']?.invalid">
+        E-Mail is required and must be a valid E-Mail.
+      </em>
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" class="form-control" placeholder="Enter age" 
+       name="personAge" [(ngModel)]="person.age" required min="0" max="120">
+       <em *ngIf="personForm.controls['personAge']?.invalid">
+        Age is required and must be between 0 and 120.
+      </em>
+    </div>
+    <div class="form-group">
+      <label>Gender</label><br/>
+      <input type="radio" value="male" name="personGender" [(ngModel)]="person.gender" required> Male
+      <input type="radio" value="female" name="personGender" [(ngModel)]="person.gender" required> Female
+    </div>  
+    <div>
+      <button type="submit" class="btn btn-primary"
+      [disabled]="!personForm.valid"
+      >Submit</button>
+    </div>
+  </form>  
+</div>
+
+
+<div class="row section">
+  <div class="col-md-6">
+    <h4>Control State - "Name" Field</h4><br>
+    Name Fld is dirty: {{personForm.controls['personName']?.dirty}}<br>
+    Name Fld is pristine: {{personForm.controls['personName']?.pristine}}<br>
+    Name Fld is valid: {{personForm.controls['personName']?.valid}}<br>
+    Name Fld is invalid: {{personForm.controls['personName']?.invalid}}<br>
+    Name Fld is touched: {{personForm.controls['personName']?.touched}}<br>
+    Name Fld is untouched: {{personForm.controls['personName']?.untouched}}<br>  
+  </div>
+  <div class="col-md-6">
+    <h4>Control State - "Age" Field</h4><br>
+    Age Fld is dirty: {{personForm.controls['personAge']?.dirty}}<br>
+    Age Fld is pristine: {{personForm.controls['personAge']?.pristine}}<br>
+    Age Fld is valid: {{personForm.controls['personAge']?.valid}}<br>
+    Age Fld is invalid: {{personForm.controls['personAge']?.invalid}}<br>
+    Age Fld is touched: {{personForm.controls['personAge']?.touched}}<br>
+    Age Fld is untouched: {{personForm.controls['personAge']?.untouched}}<br>   
+  </div>
+</div>
+<div class="row section">
+  <div class="col-md-6">
+    <h4>Form State</h4><br>
+    Form is dirty: {{personForm.dirty}}<br>
+    Form is pristine ('unberührt'): {{personForm.pristine}}<br>  
+    Form is valid: {{personForm.valid}}<br>
+    Form is invalid: {{personForm.invalid}}<br>
+    Form is touched: {{personForm.touched}}<br>
+    Form is untouched: {{personForm.untouched}}<br>    
+  </div> 
+</div>

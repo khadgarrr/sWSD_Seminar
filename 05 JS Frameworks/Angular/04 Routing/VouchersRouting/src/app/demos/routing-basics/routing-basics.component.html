@@ -1,0 +1,17 @@
+<div class="section">
+    <h4>Using Router Link & Basic Routing</h4>
+    <a [routerLink]="['/accounts']">Simple Route (Show Accounts)</a><br>     
+    <a [routerLink]="['/wotschers']">Redirect From 'Wotschers'</a><br> 
+</div>
+
+<div class="section">
+    <h4>Using Query Params & Fragments</h4>
+    <a [routerLink]="['/vouchers', 2]" [queryParams]="{readonly: true}"  fragment="section5">Query & Fragment Params</a><br>    
+</div>
+
+<div class="section">
+    <h4>Route using Code</h4>
+    <a (click)="showVouchers()">Simple Route using Code (Show Vouchers)</a><br>         
+    <a (click)="showVoucherParam(2)">Code Param (Show Voucher ById)</a><br>
+</div>
+

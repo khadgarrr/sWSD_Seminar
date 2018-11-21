@@ -1,0 +1,22 @@
+<div class="section">
+  <h4>Class Binding</h4>
+  <button class="myButton" [class.extraClass]="addClass">Call to Action</button>  
+</div>
+
+<div class="section">
+  <h4>Multible Class Binding</h4>
+  <button class="myButton" [ngClass]="setClasses()">Call to Action</button>  
+</div>
+
+<div class="section">
+  <h4>Style Binding</h4>
+  <button class="my-btn" [style.border]="addStyle ? '5px solid yellow' : 'none'">Call to Action 2</button>
+  
+</div>
+
+<div class="section">
+  <h4>Multible Style Binding</h4>
+  <button class="my-btn" [ngStyle]="setStyles()">Call to Action</button>
+  
+</div>
+

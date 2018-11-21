@@ -1,0 +1,8 @@
+#fb-btn {
+  margin-top: 20px;
+}
+#profile,
+#logout,
+#feed {
+  display: none;
+}

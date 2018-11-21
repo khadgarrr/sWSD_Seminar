@@ -1,0 +1,30 @@
+<div class="section">
+  <h4>Person Card - initial</h4>
+  Person: {{person.name}}, {{person.age}}<br/>
+  Salery: {{person.salery}}<br/>
+  DoB: {{person.dateOfBirth}}<br/>
+</div>
+
+<div class="section">
+  <h4>Person Card - using Pipes</h4>
+  Person: {{person.name}}, {{person.age}}<br/>
+  Salery: {{person.salery | currency}}<br/>
+  DoB: {{person.dateOfBirth | date:'longDate'}}<br/>
+</div>
+
+<div class="section">
+  <h4>JsonPipe</h4>
+  `<div>
+    <p>Without JSON pipe:</p>
+    <pre>{{person}}</pre>
+    <p>With JSON pipe:</p>
+    <pre>{{person | json}}</pre>
+  </div>`
+</div>
+
+<div class="section">
+  <h4>SlicePipe</h4>
+  `<ul>
+    <li *ngFor="let i of persons | slice:0:2">{{i | json}}</li>
+  </ul>`
+</div>

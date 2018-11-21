@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebAssembly Standalone</title>
+</head>
+
+<body>
+    <h1>WebAssembly Standalone</h1>
+    <img src="loading.gif" style="margin-top:10px" id="anim-loading">
+    <br>
+    <input type="number" id="int1" name="int1" value="0" />
+    <input type="number" id="int2" name="int2" value="0" />
+    <input type="button" value="Scan" onclick="add();" />
+    <div id='result'></div>
+
+    <script type="text/javascript">
+        var wa_add;
+
+        function add() {
+            let int1 = document.getElementById('int1').value;
+            let int2 = document.getElementById('int2').value;
+            if (wa_add) {
+                document.getElementById('result').innerText = wa_add(parseInt(int1), parseInt(int2));
+            } else {
+                document.getElementById('result').innerText = parseInt(int1) + parseInt(int2);
+            }
+        }
+        const env = {
+            memoryBase: 0,
+            tableBase: 0,
+            memory: new WebAssembly.Memory({
+                initial: 256
+            }),
+            table: new WebAssembly.Table({
+                initial: 0,
+                element: 'anyfunc'
+            })
+        };
+        fetch('test.wasm').then(response =>
+            response.arrayBuffer()
+        ).then(bytes =>
+            WebAssembly.instantiate(bytes, {
+                env: env
+            })
+        ).catch(e =>
+            console.log(e)
+        ).then(result => {
+            document.getElementById('anim-loading').style.display = 'none';
+            wa_add = result.instance.exports._add;
+        }).catch(e =>
+            console.log(e)
+        );
+    </script>
+</body>
+
+</html>

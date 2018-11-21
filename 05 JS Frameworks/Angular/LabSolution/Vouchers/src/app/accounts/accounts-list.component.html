@@ -1,0 +1,38 @@
+<div class="inner-panel">  
+  <div>
+    <table class="table table-striped">
+        <colgroup>
+          <!-- <col style="width: 5%">           -->
+          <col style="width: 40%">
+          <col style="width: 10%">
+          <col style="width: 10%">
+          <col style="width: 10%">
+          <col style="width: 10%">
+          <col style="width: 10%">
+        </colgroup>
+      <thead>
+          <tr>
+            <!-- <th>ID</th> -->
+            <th>Name</th>
+            <th>Expense</th>            
+            <th>Activated On</th>
+            <th>Deprecated</th>
+            <th></th>
+            <th></th>
+          </tr>
+      </thead>
+        <tbody>
+          <tr *ngFor="let a of accounts">
+            <!-- <td>{{a.ID}}</td> -->
+            <td>{{a.Name}}</td>
+            <td [innerHTML]="a.Expense | checked"></td>
+            <td>{{a.ActivatedOn | date:'shortDate'}}</td>
+            <td [innerHTML]="a.Deprecated | checked"></td>
+            <td><a class="table-cmd" (click)="deleteAcccount(a)" >Delete</a></td>
+            <td><a class="table-cmd" [routerLink]="[ '/accounts', a.ID ]">Edit</a></td>            
+          </tr>    
+    </tbody>
+    </table>
+  </div>
+</div>
+

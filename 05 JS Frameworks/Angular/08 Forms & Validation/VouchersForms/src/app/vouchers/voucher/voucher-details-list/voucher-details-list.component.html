@@ -1,0 +1,50 @@
+<div class="cmdPanelSmall">
+    <div class="row">
+        <div class="col-md-8">
+            <span>Details</span>
+        </div>
+        <div class="col-md-4 rightCell">
+            <a (click)="selectDetail(null)" class="btn btn-xs btn-default">New</a>
+        </div>
+    </div>
+</div>
+
+<div class="spacer">    
+    <div class="table-responsive">
+        <table cellspacing="0" cellpadding="0" class="table table-hover">
+            <colgroup>
+                <col style="width: 5%"/>
+                <col style="width: 40%"/>
+                <col style="width: 15%"/>
+                <col style="width: 30%"/>
+                <col style="width: 5%"/>
+                <col style="width: 5%"/>
+            </colgroup>
+            <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Text</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Account</th>
+                <th colspan="2" scope="col">
+                    
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tblVoucherDetailsBody">
+            <tr *ngFor="let vd of details">
+                <td class="readonlyID">{{vd.ID}}</td>
+                <td> {{vd.Text}}</td>
+                <td class="detailsAmountItem">{{vd.Amount}}</td>
+                <td> {{ vd.Account!=null? vd.Account.Name : ""}}</td>
+                <td>
+                    <a ng-click="deleteDetail(vd)" class="btn btn-xs btn-default">Delete</a>
+                </td>
+                <td>
+                    <a (click)="selectDetail(vd)" class="btn btn-xs btn-default">Edit</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<mat-list>
+  <mat-list-item *ngFor="let m of markers" class="mat-card mat-bottom">
+    <img mat-list-avatar [src]="m.imgURL" />
+    <h4 mat-line>{{m.lable}}</h4>
+    <h6 mat-line> {{getMarkerType(m.type)}}</h6>
+    <button mat-mini-fab (click)="deleteMarker(m)">
+      <mat-icon>delete</mat-icon>
+    </button>
+    <button mat-mini-fab (click)="showMarker(m)">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-list>

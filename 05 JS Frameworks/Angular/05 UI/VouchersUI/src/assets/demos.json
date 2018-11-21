@@ -1,0 +1,8 @@
+[
+    {"url": "cssbasics", "title": "CSS Basics", "component": "CSSBindingComponent"},
+    {"url": "bootstrap", "title": "Using Bootstrap", "component": "UsingBootstrapComponent"},
+    {"url": "material", "title": "Using Material", "component": "UsingMaterialComponent"},
+    {"url": "material-table", "title": "Using Material Table", "component": "MaterialTableComponent"},
+    {"url": "flexbox", "title": "Using Flexbox", "component": "FlexboxComponent"},
+    {"url": "thirdparty", "title": "Usting Third Party", "component": "UsingThirdpartyComponent"}
+]

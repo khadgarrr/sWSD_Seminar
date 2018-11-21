@@ -1,0 +1,42 @@
+{
+  "name": "Progressive smartPrepper",
+  "short_name": "smartPrepper",
+  "lang": "de",
+  "description": "An app for preppers of all king",
+  "background_color": "#6d4c41",
+  "theme_color": "#6d4c41",
+  "icons": [
+    {
+      "src": "/assets/images/smartDwarf.png",
+      "sizes": "36x60",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/beeren.png",
+      "sizes": "100x100",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/camera.png",
+      "sizes": "51x49",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/holler.png",
+      "sizes": "100x100",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/schwammerl.png",
+      "sizes": "100x99",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/favicon.ico",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone"
+}

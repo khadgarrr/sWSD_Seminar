@@ -1,0 +1,59 @@
+<div class="section">
+    <h4>Table</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Text</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let v of vouchers" (click)="showVoucher(v)">
+                <td>{{v.ID}}</td>
+                <td>{{v.Text}}</td>
+                <td>
+                    <a [routerLink]="[ '/vouchers', v.ID ]">Edit</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="section">
+    <h4>List</h4>
+    <ul>
+        <li *ngFor="let p of persons">{{p.name}}</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h4>@If ... [else]</h4>
+    <input type="checkbox" [(ngModel)]="showDivOne">
+    <label>Please check to change value for "showDivOne":</label>
+    <br/> Current value for "showDivOne": {{showDivOne}}
+
+    <div *ngIf="showDivOne; else ngTemplate">
+        <h5>Div 1</h5>
+    </div>
+    <ng-template #ngTemplate>
+        <h5>Not Div 1</h5>
+    </ng-template>
+
+    <!-- <div *ngIf="!showDivOne">
+        <h5>Not Div 1</h5>
+    </div> -->
+    
+</div>
+
+<div class="section">
+    <h4>@Switch</h4>
+    Current value for "currentDirection": {{currentDirection}} - remember it is an 0 based Enum
+    <div [ngSwitch]="currentDirection">
+        <b *ngSwitchCase="direction.East">Going East Direction ...</b>
+        <b *ngSwitchCase="direction.West">Going West Direction ...</b>
+        <b *ngSwitchCase="direction.North">Going North Direction ...</b>
+        <b *ngSwitchCase="direction.South">Going South Direction ...</b>
+        <b *ngSwitchDefault>No Direction</b>
+    </div>
+</div>

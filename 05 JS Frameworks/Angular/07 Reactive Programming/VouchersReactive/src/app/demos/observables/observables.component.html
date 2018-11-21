@@ -1,0 +1,97 @@
+<div class="section">
+  <h4>Works with pure Mock Data</h4>
+  <br>
+</div>
+
+<div class="section">
+  <div class='row'>
+    <div class='col-xs-12'>
+      <h4>Using Observables</h4>
+      <br>
+      <a (click)="createSingletonObservable()">Get Media Singleton Observable</a> |
+      <a (click)="unsubscribeSingletonObservable()">Unsubscribe</a>
+      <br />
+      <a (click)="createArrayObservable()">Get Media Array Observable - Simulate Stream</a>
+      <br />
+      <a (click)="getArrayObservableFromService()">Get Media Array Observable from Service</a>
+      <br />
+      <a (click)="useFilterStaticArray()">Use Filter with static Array & Filter with ES6</a>
+      <br />
+      <a (click)="useFilterWithStream()">Use Filter with Stream & Filter with Operators</a>
+      <br />
+      <a (click)="useBehaviorSubject()">Use Filter using BehaviorSubject</a>
+    </div>
+  </div>
+</div>
+
+<div [ngSwitch]="currentView">
+  
+  <div *ngSwitchCase="view.SingletonObservable">
+    See console for output
+    <br/>{{ (mediaSingleton | async)?.title}}
+  </div>
+
+  <div *ngSwitchCase="view.ArrayObservable">
+      <div class='itemGroup col-xs-12'>
+          <div class='row'>
+            <h4>createArrayObservable()</h4>
+          </div>
+          <div class='row'>
+            <app-mediaitem *ngFor="let mi of mediaItems" [item]="mi" [isPlaying]=true class="col-xs-3"></app-mediaitem>
+          </div>
+        </div>
+  </div>
+
+  <div *ngSwitchCase="view.ArrayObservableFromService">
+      <div class='itemGroup col-xs-12'>
+        <div class='row'>
+          <h4>getArrayObservableFromService()</h4>
+        </div>
+        <div class='row'>
+          <app-mediaitem *ngFor="let mi of mediaItems" [item]="mi" [isPlaying]=true class="col-xs-3"></app-mediaitem>
+        </div>
+      </div>
+    </div>
+
+  <div *ngSwitchCase="view.FilterObsBinding">   
+
+    <div class='itemGroup col-xs-12'>
+      <div class='row'>
+        <h4>Now Playing</h4>
+      </div>
+      <div class='row'>
+        <app-mediaitem *ngFor="let mi of playing | async" [item]="mi" [isPlaying]=true class="col-xs-3"></app-mediaitem>
+      </div>
+    </div>
+    <div class='itemGroup col-xs-12'>
+      <div class='row'>
+        <h4>Upcoming</h4>
+      </div>
+      <div class='row'>
+        <app-mediaitem *ngFor="let mi of upcoming | async" [item]="mi" [isPlaying]=false class="col-xs-3"></app-mediaitem>
+      </div>
+    </div>
+
+  </div>
+
+  <div *ngSwitchCase="view.FilterArrayBinding">
+
+      <div class='itemGroup col-xs-12'>
+        <div class='row'>
+          <h4>Now Playing</h4>
+        </div>
+        <div class='row'>
+          <app-mediaitem *ngFor="let mi of playingArray" [item]="mi" [isPlaying]=true class="col-xs-3"></app-mediaitem>
+        </div>
+      </div>
+      <div class='itemGroup col-xs-12'>
+        <div class='row'>
+          <h4>Upcoming</h4>
+        </div>
+        <div class='row'>
+          <app-mediaitem *ngFor="let mi of upcomingArray" [item]="mi" [isPlaying]=false class="col-xs-3"></app-mediaitem>
+        </div>
+      </div>
+
+  </div>
+

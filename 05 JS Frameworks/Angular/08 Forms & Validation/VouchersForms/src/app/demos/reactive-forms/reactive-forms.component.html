@@ -1,0 +1,22 @@
+<div class="section">
+  <h4>Voucher Form - Reactive (Model) Bound</h4>
+  <span>Make sure you only have one Submit in the form</span><br>
+  <form [formGroup]="personForm" (ngSubmit)="savePerson(personForm.value)" novalidate>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" placeholder="Enter name" formControlName="pName"  >
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" class="form-control" placeholder="Enter age" formControlName="pAge">
+    </div>
+    <div class="form-group">
+      <label>Gender</label><br/>
+      <input type="radio" value="male" formControlName="pGender"> Male
+      <input type="radio" value="female" formControlName="pGender"> Female
+    </div>  
+    <div>
+      <button type="submit" class="btn btn-primary" (click)="savePerson(personForm)" >Submit</button>
+    </div>
+  </form>  
+</div>

@@ -1,0 +1,36 @@
+<div class="section">
+    <h4>Make sure API is running: VouchersAPI -> src folder -> dotnet watch run</h4><br>
+  </div>
+  
+  <div class="section">
+    <div class='row'>
+      <div class='col-xs-3'>
+        <h4>Voucher</h4><br>
+        <a (click)="getVouchers()">Get Vouchers</a><br />
+        <a (click)="getVoucher()">Get Voucher</a><br />
+        <a (click)="insertVoucher()">Insert Voucher</a><br />
+        <a (click)="updateVoucher()">Update Voucher</a><br />
+        <a (click)="deleteVoucher()">Delete Voucher</a><br />
+      </div>
+      <div class='col-xs-9' style='vertical-align: top'>
+        <h5>Result</h5><br>
+        {{result | json}}
+      </div>
+    </div>    
+  </div>
+  
+  <div class="section">
+      <div class='row'>
+        <div class='col-xs-3'>
+          <h4>Custom Routes</h4><br>
+          <a (click)="getSum()">Custom Get Route, getSum()</a><br />
+          <a (click)="getVM()">View Model, getVM()</a><br />
+          <a (click)="doSave()">Custom Post Route, doSave()</a><br />
+        </div>
+        <div class='col-xs-9' style='vertical-align: top'>
+          <h5>Result</h5><br>
+          {{resultB | json}}
+        </div>
+      </div>    
+  </div>
+  

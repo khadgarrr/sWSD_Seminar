@@ -1,0 +1,28 @@
+$barHeight: 4vh;
+$mainHeight: 90vh;
+
+$defPad: 10px;
+$barCol: #6d4c41;
+$bodyCol: whitesmoke;
+
+@mixin sidePadding {
+  padding-left: $defPad;
+  padding-right: $defPad;
+}
+
+@mixin topPadding {
+  padding-top: $defPad;
+}
+
+@mixin bar {
+  height: $barHeight;
+  min-height: 60px !important;
+  color: primary;
+
+  // @include sidePadding;
+}
+
+@mixin fiSpacing {
+  margin: 10px;
+  padding: 5px;
+}

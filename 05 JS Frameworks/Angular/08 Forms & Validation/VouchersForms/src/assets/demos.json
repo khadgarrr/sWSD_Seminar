@@ -1,0 +1,9 @@
+[
+    {"url": "templatedriven", "title": "Template driven Forms", "component": "TemplateDrivenComponent"},
+    {"url": "reactiveforms", "title": "Reactive Forms", "component": "ReativeFormsComponent"},
+    {"url": "formsbuilder", "title": "Reactive FormsBuilder", "component": "FormsBuilderComponent"},
+    {"url": "templatevalidation", "title": "Template Validation", "component": "TemplateValidationComponent"},
+    {"url": "reactivevalidation", "title": "Reactive Validaiton", "component": "ReativeValidationComponent"},
+    {"url": "twoway", "title": "Two Way Binding Recap", "component": "TwoWayVouchersComponent"},
+    {"url": "dataflow", "title": "Unidirectional Data Flow", "component": "UnidirectionalVouchersComponent"}        
+]

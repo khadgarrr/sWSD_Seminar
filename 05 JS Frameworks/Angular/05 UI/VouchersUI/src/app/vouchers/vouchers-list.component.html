@@ -1,0 +1,24 @@
+<div class="section">  
+  <div>
+    <table class="table">
+      <thead>
+          <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Text</th>
+            <th>Amount</th>
+            <th></th>
+          </tr>
+      </thead>
+        <tbody>
+          <tr *ngFor="let v of vouchers" (click)="showVoucher(v.ID)">
+            <td>{{v.ID}}</td>
+            <td>{{v.Date | date:'shortDate'}}</td>
+            <td>{{v.Text}}</td>
+            <td>{{v.Amount | currency:'EUR':true}} </td>
+            <td><a [routerLink]="[ '/vouchers', v.ID ]">Edit</a></td>
+          </tr>    
+    </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="section">
+  <h4>Works with pure Mock Data</h4>
+</div>
+
+<div class="section">
+  <div class='row'>
+    <div class='col-xs-12'>
+      <h4>Observable Basics</h4><br>
+      <a (click)="useObsFrom()">Use Observer.from()</a><br />
+      <a (click)="useObsCreate()">Use Observer.Create()</a><br />
+      <a (click)="useOperator()">Use Operator()</a><br />
+      <a (click)="useAsyncToObs()">Use Async Operation()</a><br />
+      <a (click)="usePromiseToObs()">PromiseToObservable(</a><br />
+    </div>
+  </div>    
+
+</div>
+
+<div class="section">
+  <div class='row'>
+    <div class='col-xs-12' style='vertical-align: top'>
+      <h5>Result: {{fName}}</h5><br>
+      {{nbrObs | async}}
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class='row'>
+    <div class='col-xs-12' style='vertical-align: top'>
+      <pre> {{result | json}} </pre>
+    </div>
+  </div>
+</div>

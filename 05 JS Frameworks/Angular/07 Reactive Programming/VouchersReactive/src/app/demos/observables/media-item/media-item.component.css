@@ -1,0 +1,24 @@
+.upcomingItem {
+  background-color: rgb(235, 204, 70);  
+}
+
+.playingItem {
+  background-color: rgb(225, 200, 248);
+}
+
+.header {
+  margin: 10px;
+  color: blue;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.startTime {
+  padding: 10px;
+}
+
+.box{
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}

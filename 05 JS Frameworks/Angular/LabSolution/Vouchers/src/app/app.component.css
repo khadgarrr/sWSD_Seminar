@@ -1,0 +1,17 @@
+.flexMainBig{    
+    flex-grow: 2;
+}
+
+.flexSideHidden{
+    display: none;   
+}
+
+ .flexMain{
+    flex: 800;      
+ }
+
+ .flexSide{
+    flex: 130;     
+}
+
+

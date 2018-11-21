@@ -1,0 +1,86 @@
+<div *ngIf="selectedPerson!=null">
+    <div class="section">
+        <h4>Person Card - One way binding</h4>
+        <div>
+            <span>
+                <img width="30%" [src]="selectedPerson.imgUrl" />
+            </span>
+            <span>
+                Person: {{selectedPerson.name}}, {{selectedPerson.age}}
+            </span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h4>Binding Nullable Types - {{latePerson?.name}} Arriving Late</h4>
+        <div *ngIf="latePerson?.name">
+            <pre>{{latePerson | json}}</pre>
+        </div>
+    </div>
+
+    <div class="section">
+        <h4>Show and hide - Prop Binding - click buttons</h4>
+        <a (click)="toggleDisplay()">Toggle</a>
+        <button (click)="toggleDisplay()">Toggle</button>
+
+        <div class="wrapper">
+            <span [style.visibility]="hide ? 'hidden': 'visible'">Msg 1</span>
+            <span [style.visibility]="!hide ? 'hidden': 'visible'">Msg 2</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h4>Bindings - Try change text</h4>
+        <input id='lblOneWay' type="text" [value]="selectedPerson.name" />
+        <label for='lblOneWay'>One Way Property Binding</label>
+        <br/>
+
+        <input type="text" id='lblOneWayModel' [ngModel]="selectedPerson.name" />
+        <label for='lblOneWayModel'>One Way (Model) Binding</label>
+        <br/>
+
+        <input type="text" id='lblTwoWay' [(ngModel)]="selectedPerson.name">
+        <label for='lblTwoWay'>Two Way (Model) Binding</label>
+        <br/>
+
+        <input type="text" id='lblEvtBinding' [value]="selectedPerson.name" (keyup.enter)="person.name = $event.target.value">
+        <label for='lblEvtBinding'>Two way using Evt Binding with expression - depends on enter key</label>
+        <br/>
+    </div>
+
+    <div class="section">
+        <h4>Bindings Radio Buttons</h4>
+        <input type="radio" value="male" name="gender" [(ngModel)]="selectedPerson.gender"> Male
+        <input type="radio" value="female" name="gender" [(ngModel)]="selectedPerson.gender"> Female
+        <br> {{selectedPerson.name}} is {{selectedPerson.gender}}
+    </div>
+
+    <div class="section">
+        <h4>Bindings Radio Buttons to Booleans</h4>
+        <input type="radio" [value]=true name="married" [(ngModel)]="selectedPerson.married"> Married
+        <input type="radio" [value]=false name="married" [(ngModel)]="selectedPerson.married"> Not Married
+        <br> {{selectedPerson.name}} is {{selectedPerson.married ? " married" : " not married"}}
+    </div>
+
+    <div class="section">
+        <h4>Evtbinding with param</h4>
+        <input type="radio" value="male" name="genderWithParam" [ngModel]="selectedPerson.gender" (change)="handleChange(selectedPerson)"> Male
+        <input type="radio" value="female" name="genderWithParam" [ngModel]="selectedPerson.gender" (change)="handleChange(selectedPerson)"> Female
+        <br> {{selectedPerson.name}} is {{selectedPerson.gender}}
+    </div>
+
+    <div class="section">
+        <h4>Bindings Checkboxes</h4>
+        <input type="checkbox" name="isActive" [(ngModel)]="isActive">
+        <br> Current State: {{isActive}}
+    </div>
+
+    <div class="section">
+        <h4>Bindings Select</h4>
+        <select [(ngModel)]="selectedPerson">
+            <option *ngFor="let p of persons" [ngValue]="p">{{p.name}}</option>
+        </select>
+        <br> You selected: {{selectedPerson.name}}
+    </div>
+
+</div>

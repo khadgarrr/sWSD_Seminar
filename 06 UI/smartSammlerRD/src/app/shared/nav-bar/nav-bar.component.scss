@@ -1,0 +1,25 @@
+@import "varsAndMixins";
+
+.navMenu {
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.navbar-right {
+  float: right;
+}
+
+.navLogo {
+  height: 55px;
+}
+
+// no spelling mistake - it is an element style
+mat-icon {
+  cursor: pointer;
+}

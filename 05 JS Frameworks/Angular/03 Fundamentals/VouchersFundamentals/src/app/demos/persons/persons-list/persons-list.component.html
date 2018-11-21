@@ -1,0 +1,25 @@
+
+<div>
+  <table class="table">
+    <thead>
+        <tr>
+          <th>ID</th>
+          <th>Text</th>
+          <th>Age</th>
+        </tr>
+    </thead>
+      <tbody>
+        <tr *ngFor="let p of persons">
+          <td>{{p.name}}</td>
+          <td>{{p.gender}}</td>
+          <td>{{p.age}}</td>
+          <td><a (click)="selectPerson(p)">Select</a></td>
+        </tr>    
+  </tbody>
+  </table>
+</div>
+
+<div *ngIf="current!=null">
+  <h4>Details</h4>
+  <app-person-edit [person]="current" [edit]="true" (savePerson)="sendtoService($event)" ></app-person-edit>
+</div>

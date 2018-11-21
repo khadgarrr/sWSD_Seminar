@@ -1,0 +1,58 @@
+<div class="section">
+  <h4>Works with pure Mock Data</h4>
+  <br>
+</div>
+
+<div class="section">
+  <div class='row'>
+    <div class='col-xs-12'>
+      <h4>Using Observables</h4>
+      <br>
+      <a (click)="useMouse()">Captcha Mouse Events as Observable</a> 
+      <br>
+      <a (click)="handleClick()">Handle Click as Observable</a> 
+
+      <br>
+      <a (click)="useDOM()">Captcha DOM Events (blur) as Observable</a>
+      <br />
+      <a (click)="showDashboardDetails()">Show Dashboard using Hover</a>
+      <br />
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class='row'>
+   
+    <div class='col-xs-12' style='vertical-align: top'>
+      Mouse Moved at {{result | async}} | <a (click)="unsubscribeMouseEvt()">Unsubscribe</a><br>       
+    </div>
+    <div  class='col-xs-12'>
+      <button id="mybutton">Click me</button> 
+    </div>
+  </div>    
+</div>
+
+<div>
+  <div>
+
+    <div class='itemGroup col-xs-12'>
+      <div class='row'>
+        <h4>Now Playing</h4>
+      </div>
+      <div class='row'>
+        <app-mediaitem *ngFor="let mi of playing | async" [item]="mi" [isPlaying]=true (onHover)="showDetail($event)" class="col-xs-3"></app-mediaitem>
+      </div>
+    </div>
+    <div class='itemGroup col-xs-12'>
+      <div class='row'>
+        <h4>Upcoming</h4>
+      </div>
+      <div class='row'>
+        <app-mediaitem *ngFor="let mi of upcoming | async" [item]="mi" [isPlaying]=false class="col-xs-3"></app-mediaitem>
+      </div>
+    </div>
+
+  </div>
+
+</div>

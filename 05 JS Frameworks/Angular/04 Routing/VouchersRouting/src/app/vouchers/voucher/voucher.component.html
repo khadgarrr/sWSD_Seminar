@@ -1,0 +1,11 @@
+<div class="section">
+  <h4>Showing Voucher:</h4>
+  <div>
+    {{voucher | json}}
+  </div> 
+
+  <app-voucher-details-list [details]="voucher==undefined?null:voucher.Details"></app-voucher-details-list>
+
+  <app-voucher-detail [detail]="currentDetail==undefined?null:currentDetail"></app-voucher-detail>
+  
+</div>

@@ -1,0 +1,12 @@
+<div fxLayout='column'>
+  <app-nav-bar></app-nav-bar>
+  <div class="mainContainer" fxLayout='row' fxLayoutGap='15px' fxLayoutGap.lt-md='0'>
+    <div class="main" fxFlex>
+      <router-outlet></router-outlet>
+    </div>
+    <div class="sidebar" fxFlex fxHide.lt-md>
+      <router-outlet name="sidebar"></router-outlet>
+    </div>
+  </div>
+  <app-footer-bar></app-footer-bar>
+</div>

@@ -1,0 +1,14 @@
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Release\netcoreapp2.1\smartSammlerAPI.deps.json
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Release\netcoreapp2.1\smartSammlerAPI.runtimeconfig.json
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Release\netcoreapp2.1\smartSammlerAPI.runtimeconfig.dev.json
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Release\netcoreapp2.1\smartSammlerAPI.dll
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\bin\Release\netcoreapp2.1\smartSammlerAPI.pdb
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Release\netcoreapp2.1\smartSammlerAPI.csprojAssemblyReference.cache
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Release\netcoreapp2.1\smartSammlerAPI.csproj.CoreCompileInputs.cache
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Release\netcoreapp2.1\smartSammlerAPI.RazorAssemblyInfo.cache
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Release\netcoreapp2.1\smartSammlerAPI.RazorAssemblyInfo.cs
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Release\netcoreapp2.1\smartSammlerAPI.AssemblyInfoInputs.cache
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Release\netcoreapp2.1\smartSammlerAPI.AssemblyInfo.cs
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Release\netcoreapp2.1\smartSammlerAPI.RazorTargetAssemblyInfo.cache
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Release\netcoreapp2.1\smartSammlerAPI.dll
+G:\mobileOverview\00 Course-API\smartSammlerAPI\smartSammlerAPI\obj\Release\netcoreapp2.1\smartSammlerAPI.pdb

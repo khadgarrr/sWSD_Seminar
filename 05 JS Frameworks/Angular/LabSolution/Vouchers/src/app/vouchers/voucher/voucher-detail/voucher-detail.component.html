@@ -1,0 +1,35 @@
+<div class="cmdPanelSmall">
+    <div class="row">
+        <div class="col-md-8">
+            <span>Selected Detail:</span>
+        </div>
+        <div class="col-md-4 rightCell">
+            <span class="right">                
+            </span>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="row spacedRow">
+        <div class="col-md-6">
+            <input type="text" [(ngModel)]="detail.Text" size="40" placeholder="Text:" class="form-control input-sm" />
+        </div>
+
+        <div class="col-md-2">
+            <input type="number" [(ngModel)]="detail.Amount" size="15" class="form-control input-sm vdElement" />
+        </div>
+
+        <div class="col-md-4">
+            <select [(ngModel)]="detail.AccountID" class="form-control input-sm">
+                <option *ngFor="let a of accounts" [ngValue]="a.ID">{{a.Name}}</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row spacedRow">
+        <div class="col-md-12">
+            <textarea [(ngModel)]="detail.Comment" class="form-control vdElement" rows="4" placeholder="Comment"></textarea>
+        </div>
+    </div>
+</div>

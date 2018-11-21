@@ -1,0 +1,60 @@
+<div class="cmdPanel">
+    <div class="row">
+        <div class="col-md-8">
+            <span>Voucher {{voucher?.ID}}</span>
+        </div>
+        <div class="col-md-4 rightCell">
+            <!-- <a routerLink="/vouchers" class="btn btn-xs btn-default">Cancel / Back</a>
+            <a (click)="saveVoucher()" class="btn btn-xs btn-default">Save Voucher</a> -->
+        </div>
+    </div>
+</div>
+
+
+<div class="btnBoxPadding">
+    <div class="row">
+        <div class="col-md-4">
+            <input id="VoucherText" [ngModel]="voucher?.Text" size="40" type="text" placeholder="Text:" class="form-control input-sm" />
+        </div>
+
+        <div class="col-md-2">
+            <input type="text" class="form-control input-sm" #dp="bsDatepicker" bsDatepicker  [ngModel]="voucher.Date">
+        </div>
+
+        <div class="col-md-2">
+            <input [ngModel]="voucher?.Amount" size="15" type="text" placeholder="0" class="span7 form-control input-sm" />
+        </div>
+
+        <div class="col-md-4">
+            <ul class="nav">
+                <li class="col-md-4">
+                    <label class="radio-inline" for="rbExpense">
+                            <input type="radio" name="Expense" [value]=true [(ngModel)]="voucher.Expense"/>
+                            Expense:
+                        </label>
+                </li>
+                <li class="col-md-4">
+                    <label class="radio-inline" for="rbIncome">
+                            <input type="radio" name="Expense" [value]=false [(ngModel)]="voucher.Expense"/>
+                            Income:
+                        </label>
+                </li>
+                <li class="col-md-4">
+                    <label class="checkbox-inline" for="chkPaid">
+                            <input [(ngModel)]="voucher.Paid" type="checkbox" name="Paid" />
+                            Paid:
+                        </label>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">&nbsp;</div>
+
+    <app-voucher-details-list [details]="voucher==undefined?null:voucher.Details" (detailSelected)="selectDetail($event)"></app-voucher-details-list>
+
+    <div *ngIf="currentDetail!=undefined">
+        <app-voucher-detail [detail]="currentDetail" [accounts]="accounts" (detailSaved)="saveDetail($event)"></app-voucher-detail>
+    </div>
+
+</div>

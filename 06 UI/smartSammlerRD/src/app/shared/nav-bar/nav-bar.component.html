@@ -1,0 +1,11 @@
+<mat-toolbar color="primary" class="navMenu" fxLayout="row">
+  <div fxLayoutAlign="start center" fxLayoutGap='20px' fxFlex>
+    <img class="navLogo" src="/assets/images/smartDwarf.png" />
+    <a [routerLink]="['','/']">{{appName}}</a>
+  </div>
+  <div class="navMenu" fxLayoutAlign="end center" fxLayoutGap='20px' class="navbar-right" fxFlex>
+    <mat-icon fxShow.lt-md [routerLink]="['/settings']">settings</mat-icon>
+    <mat-icon fxShow.lt-md (click)="addMarker()">add_circle</mat-icon>
+    <mat-icon fxShow.lt-md [routerLink]="['','/']">home</mat-icon>
+  </div>
+</mat-toolbar>

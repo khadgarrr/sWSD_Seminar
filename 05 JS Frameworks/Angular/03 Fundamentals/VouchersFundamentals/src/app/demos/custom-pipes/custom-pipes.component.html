@@ -1,0 +1,23 @@
+<div class="section">
+  <h4>Table</h4>
+  <label style="width: 5%;">Filter:</label>
+  <input type="text" [(ngModel)]="voucherFilter" style="width: 94%;" />
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Text</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let v of vouchers | VoucherFilter:voucherFilter:'Text'" (click)="showVoucher(v.ID)">
+        <td>{{v.ID}}</td>
+        <td>{{v.Text}}</td>
+        <td>
+          <a [routerLink]="[ '/vouchers', v.ID ]">Edit</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

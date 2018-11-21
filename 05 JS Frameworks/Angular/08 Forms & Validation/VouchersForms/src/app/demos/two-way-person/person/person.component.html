@@ -1,0 +1,19 @@
+<form #personForm="ngForm" role="form" novalidate>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Enter name" 
+      name="name" [(ngModel)]="person.name" required minlength="4">
+  </div>
+  <div class="form-group">
+    <label for="age">Age</label>
+    <input type="number" class="form-control" id="age" placeholder="Enter age" name="age" [(ngModel)]="person.age">
+  </div>
+  <div class="form-group">
+    <label>Gender</label><br/>
+    <input type="radio" value="male" name="gender" [(ngModel)]="person.gender" > Male
+    <input type="radio" value="female" name="gender" [(ngModel)]="person.gender" > Female
+  </div>  
+  <div *ngIf="edit">
+    <a (click)="doSave()" class="btn btn-default">Submit</a>
+  </div>
+</form>

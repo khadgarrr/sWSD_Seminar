@@ -1,0 +1,5 @@
+<div class="sideCommands">
+  <div *ngFor="let c of cmds" class="item">
+    <div class="table-cmd" (click)="dispatchAction(c.action)"><span class="glyphicon {{c.icon}}"></span> {{c.title | uppercase}}</div>
+  </div>
+</div>

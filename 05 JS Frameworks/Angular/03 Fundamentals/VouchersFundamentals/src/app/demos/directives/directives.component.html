@@ -1,0 +1,7 @@
+<div class="section">
+    <h4><a (click)="changeColor()">Change Color</a> | <a (click)="changeClass()">Change CSS Class</a></h4>
+
+    <div [ngStyle]="{'margin-top': '10px', 'color': 'white', 'background-color': bgcolor}">{{msg}}</div>
+    
+    <div [ngClass]="getClass()" ></div>
+</div>

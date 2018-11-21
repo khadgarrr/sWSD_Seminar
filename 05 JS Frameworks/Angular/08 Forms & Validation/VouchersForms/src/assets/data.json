@@ -1,0 +1,24 @@
+{
+  "screenshots": [
+      {
+        "img": "assets/images/cleo.jpg",
+        "description": "Cleo - the whippet. Born in Denmark",
+        "liked": "0"
+      },
+      {
+        "img": "assets/images/flora.jpg",
+        "description": "Flora, an Italian Greyhound born in Riga",
+        "liked": "0"
+      },
+      {
+        "img": "assets/images/soi.jpg",
+        "description": "Live from Amsterdam - Soi the whippet",
+        "liked": "0"
+      },
+      {
+        "img": "assets/images/giro.jpg",
+        "description": "Giro - rescued from Spain - a Galgo Espanol - the Spanish Greyhound",
+        "liked": "0"
+      }
+  ]
+}

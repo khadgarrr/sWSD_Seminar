@@ -1,0 +1,14 @@
+.demoMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.demoMenu div {
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.demoMenu div:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

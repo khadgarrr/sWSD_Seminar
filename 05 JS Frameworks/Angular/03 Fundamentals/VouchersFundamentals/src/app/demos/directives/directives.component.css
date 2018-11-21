@@ -1,0 +1,17 @@
+a{
+ cursor: pointer;   
+}
+
+.my-big{
+    height: 300px;
+    width: 100%;
+    background-color: fuchsia;
+    margin-top: 30px;
+}
+
+.my-small{    
+    height: 100px;
+    width: 100%;
+    background-color: fuchsia;
+    margin-top: 30px;
+}

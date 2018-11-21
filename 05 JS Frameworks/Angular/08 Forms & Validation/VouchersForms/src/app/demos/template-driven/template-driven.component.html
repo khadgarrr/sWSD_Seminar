@@ -1,0 +1,41 @@
+<div class="section">
+  <h4>Voucher Form - Template Driven</h4><br>
+  <form #personForm="ngForm" (ngSubmit)="savePerson(personForm)" role="form" novalidate>
+    <div id="user-data" ngModelGroup="userData">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="personName" placeholder="Enter name" [(ngModel)]="person.name">
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" class="form-control" name="personAge" placeholder="Enter age" [(ngModel)]="person.age">
+      </div>
+    </div>  
+    <div class="form-group">
+      <label>Gender</label><br/>
+      <input type="radio" value="male" name="personGender" [(ngModel)]="person.gender" > Male
+      <input type="radio" value="female" name="personGender" [(ngModel)]="person.gender" > Female
+    </div>
+    <div class="form-group">
+        <label>Wealth</label><br/>
+        <select name="personWealth" [(ngModel)]="person.wealth">
+          <option *ngFor="let pw of wealth" [ngValue]="pw">{{pw}}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Wealth Radio Buttons</label><br/>
+        <div *ngFor="let pw of wealth">
+            <input type="radio" [value]="pw" name="personWealthRB" [(ngModel)]="person.wealth" > {{pw}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label>State of Mind</label><br/>
+        <select name="personState" [(ngModel)]="person.state">
+          <option *ngFor="let s of states" [ngValue]="s">{{s}}</option>
+        </select>
+    </div>
+    <div>  
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>  
+</div>

@@ -1,0 +1,10 @@
+<div class="section">
+  <h4>List of Employees - Nested</h4>
+  <ul>
+    <li *ngFor="let p of persons">
+      <app-person-edit [person]="p" [edit]="true" #personRef (savePerson)="savePersonToDB()" ></app-person-edit>
+      <a (click)='personRef.doDelete()'>Delete Person</a>
+      <hr>
+    </li>
+  </ul>
+</div>

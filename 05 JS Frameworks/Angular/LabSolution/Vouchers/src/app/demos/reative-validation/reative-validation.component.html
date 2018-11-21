@@ -1,0 +1,37 @@
+<div class="section">
+  <h4>Voucher Form - Reactive Validation</h4><br>
+  <form [formGroup]="personForm" (ngSubmit)="savePerson(personForm.value)" novalidate>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" placeholder="Enter name"
+       formControlName="pName" id="name" name="personName" >
+       <em *ngIf="personForm.get('pName').errors!= undefined && personForm.get('pName').errors['hugoNotAllowed']">
+          The Name Hugo is not allowed
+       </em>
+       <em *ngIf="personForm.get('pName').errors!= undefined && personForm.get('pName').errors['UserExists']">
+          This username is already taken
+      </em>
+      <em *ngIf="!validateName()">
+        Name is required (minimum 4 characters).
+     </em>
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" class="form-control" placeholder="Enter age"
+       formControlName="pAge" id="age" name="personAge">
+       <em *ngIf="personForm.get('pAge').valid && personForm.get('pAge').touched">
+          We dont support Undeads - Pls a value smaller than 120
+       </em>
+    </div>
+    <div class="form-group">
+      <label>Gender</label><br/>
+      <input type="radio" value="male" id="gender" formControlName="pGender"> Male
+      <input type="radio" value="female" id="gender" formControlName="pGender"> Female
+    </div>  
+    <div>
+      <button class="btn btn-primary" (click)="validateForm(personForm)" >Validate</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>  
+</div>
+
