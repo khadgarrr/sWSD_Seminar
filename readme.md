@@ -44,3 +44,86 @@ Mittels Router kann man mehrere Seiten in eine SPA einbauen und ansteuern.
 Siehe https://cli.angular.io
 
 ng generate erstellt _Artefakte_ das bedeutet Module, Komponenten, etc...
+
+ng generate component NavBar --dry-run
+Simuliere das Erstellen einee Komponente
+The "dryRun" flag means no changes were made.
+
+ng generate component shared/navnar
+Erstellt eine Komponente unter dem Ordner app/shared
+
+ShadowDOM wird von Angular genutzt Bsp.: Component specific css files.
+
+https://github.com/angular/angular-cli/wiki/generate
+
+IOC Container
+injectables müssen nicht mehr in das app.module definiert werden weil
+@Injectable({
+providedIn: "root"
+})
+
+Injectables sind SingletonPatterns mit Potential zu package spezifischen Singletons.
+
+Service Pattern sollte man sich angewöhnen.
+
+Angular structured Directives Bsp.: \*ngFor
+
+Praktische Extension für VSCode AngularLanguageService
+
+API Dokumentation Empfehlung: https://angular.io/api/
+
+Angular basiert auf Modulen, wenn ich ein Modul das nicht teil des Cores ist hinzufügen möchte muss ich das in aoo.modules.ts registrieren.
+´´´
+// ggf. muss das Modul mit npm install installiert werden
+import { HttpModule } from "@angular/http";
+
+@NgModule[{
+...
+...
+imports: [HttpModule]
+...
+...
+}]
+´´´
+
+Bei einem Observable - solange niemand subscribed wird die Funktion nicht ausgeführt.
+
+## Angular Elements
+
+Aus jedem Angular Projekt kann als Element in eine andere Webanwendung integriert werden.
+
+# React
+
+## Immutable
+
+Hält sich sehr streng an das Immutable Konzept, Objekte werden nicht im originalen verändert sondern als Kopie zurückgegeben.
+
+## Pure Functions
+
+Keine Referenzen
+Baut die DOM komplett zusammen, js und html vermischt
+
+{} expression Brackets
+
+{item.name} interpolation
+
+Jede Komponente hat _State_ und _Prop_, die Props kommen von der Parent Component State ist der Zustand der Komponente.
+
+_State_ Bsp.: Checkbox/ToggleButton der Komponente\
+_Props_ sind eher Daten
+
+Beispiel einer Komponente:
+
+```typescript
+export default class Skills extends React.Component<SkillProps, SkillState>
+```
+
+SkillProps kommt von der Parent Komponente, SkillState gehört der Klasse
+
+React ist stark auf Bindings angewiesen, wenn ich ein Feld nicht binde kann ich später keine Werte oder Funktionen daran hängen
+
+Wenn ein Property mit `this.setState({skills:{...}});` überschrieben wird, so wird nur das angegebene Objekt überschrieben, nicht das komplette. In unserem Beispel skills, vergleiche `javascript Object.assign()`
+
+# Vue
+
+Ist laut Trainer zwischen Angular und React. Eigenheiten sind z.B. dass Komponenten ihre Kindkomponenten registrieren muss.

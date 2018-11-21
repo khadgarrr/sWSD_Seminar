@@ -1,0 +1,15 @@
+<div>
+  <div>Vouchers Table</div>
+  <table>
+    <tr>
+      <th>Text</th>
+      <th>Amount</th>
+      <th>Date</th>
+    </tr>
+    <tr *ngFor="let voucher of vouchers">
+      <td>{{ voucher.Text }}</td>
+      <td>{{ voucher.Amount }}</td>
+      <td>{{ voucher.Date }}</td>
+    </tr>
+  </table>
+</div>
