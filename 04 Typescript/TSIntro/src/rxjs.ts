@@ -61,6 +61,8 @@ export class RxJSDemos {
   useObsFrom() {
     this.fName = "useObsFrom()";
 
+    // from macht aus so ziemlich allen Funktionen, Daten etc...
+    // ein Observable auf das ich Subscriben kann
     this.nbrObs = from(this.numbers);
     this.nbrObs.subscribe((data: number) => console.log("useObsFrom: ", data));
 
@@ -70,6 +72,7 @@ export class RxJSDemos {
     // );
   }
 
+  // hier wrappen wir einen EventListener in ein Observable
   wrapXMLHttpRequest(): Observable<any> {
     return Observable.create(observer => {
       let xhr = new XMLHttpRequest();
