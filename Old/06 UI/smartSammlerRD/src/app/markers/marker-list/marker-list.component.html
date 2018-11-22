@@ -1,0 +1,11 @@
+<div fxLayout='column'>
+  <mat-list>
+    <mat-list-item *ngFor="let m of markers" class="mat-card mat-bottom">
+      <img mat-list-avatar [src]="m.imgURL" />
+      <h4 mat-line>{{m.lable}}</h4>
+      <h6 mat-line> {{getMarkerType(m.type)}}</h6>
+      <mat-icon (click)="deleteMarker(m)" color="accent">delete</mat-icon>
+      <mat-icon (click)="showMarker(m)" color="accent">more_vert</mat-icon>
+    </mat-list-item>
+  </mat-list>
+</div>

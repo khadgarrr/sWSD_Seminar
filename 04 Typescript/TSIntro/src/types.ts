@@ -1,5 +1,5 @@
-import * as $ from "jquery"; //Non ES6 Module import ... alternative zu require
-import * as moment from "moment"; //Non ES6 Module import ... alternative zu require
+import * as $ from "jquery"; //Non ES6 Moduel import
+import * as moment from "moment"; //Non ES6 Moduel import
 import { List } from "linqts";
 import { Voucher } from "./model";
 

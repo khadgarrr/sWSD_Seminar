@@ -2,7 +2,7 @@ import { Util } from "./util";
 import { Car } from "./car";
 import { State } from "./state";
 
-// console.log(`Manually init util`);
+console.log(`Manually init util`);
 
 let util = new Util();
 util.log();

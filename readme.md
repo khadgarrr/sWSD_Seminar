@@ -127,3 +127,11 @@ Wenn ein Property mit `this.setState({skills:{...}});` überschrieben wird, so w
 # Vue
 
 Ist laut Trainer zwischen Angular und React. Eigenheiten sind z.B. dass Komponenten ihre Kindkomponenten registrieren muss.
+
+# Webcomponents
+
+Es gibt einige Webcomponent Frameworks mit der Komponenten erstellt werden können. Beispiel https://ionicframework.com/ _Ionic_ ist ein Hybridframework auf _Angular Basis_ - Eher ein Webform Engine alles weitere sollte über _CORDOVA_ implementiert werden. Mit diesem Framework kann man auch in den Webstore Deployen. Gegenstück dazu ist React Native.
+
+Die modernere Variante für Mobile Development _Native Script_
+
+Such mal nach nodeJS und raspberry pi

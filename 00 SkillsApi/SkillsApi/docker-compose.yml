@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  skillsapi:
+    image: ${DOCKER_REGISTRY}skillsapi
+    build:
+      context: .
+      dockerfile: SkillsApi/Dockerfile

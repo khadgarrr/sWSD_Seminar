@@ -1,0 +1,58 @@
+<div fxLayout="column">
+  <mat-toolbar color="accent">
+    <mat-toolbar-row>
+      <div fxFlex="70">
+        <span class="toolbarHeading">Vouchers</span>
+      </div>
+      <div fxFlex="30" class="rightCell">
+        <button mat-fab routerLink="/vouchers/0">
+          <mat-icon fxFlexAlign="center" class="cmdIcon">add_circle</mat-icon>
+        </button>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <div class="panelBox">
+    <table class="table table-striped">
+      <colgroup>
+        <col style="width: 10%">
+        <col style="width: 34%">
+        <col style="width: 20%">
+        <col style="width: 10%">
+        <col style="width: 10%">
+        <col style="width: 13%">
+        <col style="width: 13%">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Text</th>
+          <th class="rightCell">Amount</th>
+          <th class="centeredCell">Expense</th>
+          <th class="centeredCell">Paid</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let v of vouchers" (click)="showVoucher(v.ID)">
+          <td>{{v.Date | date:'shortDate'}}</td>
+          <td>{{v.Text}}</td>
+          <td class="rightCell">{{v.Amount | currency:'EUR':true}} </td>
+          <td [innerHTML]="v.Expense | checked" class="centeredCell"></td>
+          <td [innerHTML]="v.Paid | checked" class="centeredCell"></td>
+          <td class="rightCell">
+            <a mat-mini-fab (click)="deleteVoucher(v.ID)">
+              <i class="material-icons cmdIcon">delete</i>
+            </a>
+          </td>
+          <td class="rightCell">
+            <a mat-mini-fab [routerLink]="[ '/vouchers', v.ID ]">
+              <i class="material-icons cmdIcon">mode_edit</i>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

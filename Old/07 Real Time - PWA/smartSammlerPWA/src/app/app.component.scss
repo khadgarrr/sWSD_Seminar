@@ -1,0 +1,23 @@
+@import "varsAndMixins";
+
+.footer {
+  @include bar;
+}
+
+.mainContainer {
+  height: $mainHeight;
+}
+
+.main {
+  min-width: 300px;
+  // background-color: yellow;
+  @include sidePadding;
+  @include topPadding;
+}
+
+.sidebar {
+  min-width: 300px;
+  // background-color: yellow;
+  @include sidePadding;
+  @include topPadding;
+}

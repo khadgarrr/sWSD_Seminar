@@ -1,0 +1,15 @@
+D:\modenWebStack\00 SkillsApi\SkillsApi\SkillsApi\obj\Debug\netcoreapp2.1\SkillsApi.csprojAssemblyReference.cache
+D:\modenWebStack\00 SkillsApi\SkillsApi\SkillsApi\obj\Debug\netcoreapp2.1\SkillsApi.csproj.CoreCompileInputs.cache
+D:\modenWebStack\00 SkillsApi\SkillsApi\SkillsApi\obj\Debug\netcoreapp2.1\SkillsApi.RazorAssemblyInfo.cache
+D:\modenWebStack\00 SkillsApi\SkillsApi\SkillsApi\obj\Debug\netcoreapp2.1\SkillsApi.RazorAssemblyInfo.cs
+D:\modenWebStack\00 SkillsApi\SkillsApi\SkillsApi\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+D:\modenWebStack\00 SkillsApi\SkillsApi\SkillsApi\obj\Debug\netcoreapp2.1\SkillsApi.AssemblyInfoInputs.cache
+D:\modenWebStack\00 SkillsApi\SkillsApi\SkillsApi\obj\Debug\netcoreapp2.1\SkillsApi.AssemblyInfo.cs
+D:\modenWebStack\00 SkillsApi\SkillsApi\SkillsApi\bin\Debug\netcoreapp2.1\SkillsApi.deps.json
+D:\modenWebStack\00 SkillsApi\SkillsApi\SkillsApi\bin\Debug\netcoreapp2.1\SkillsApi.runtimeconfig.json
+D:\modenWebStack\00 SkillsApi\SkillsApi\SkillsApi\bin\Debug\netcoreapp2.1\SkillsApi.runtimeconfig.dev.json
+D:\modenWebStack\00 SkillsApi\SkillsApi\SkillsApi\bin\Debug\netcoreapp2.1\SkillsApi.dll
+D:\modenWebStack\00 SkillsApi\SkillsApi\SkillsApi\bin\Debug\netcoreapp2.1\SkillsApi.pdb
+D:\modenWebStack\00 SkillsApi\SkillsApi\SkillsApi\obj\Debug\netcoreapp2.1\SkillsApi.RazorTargetAssemblyInfo.cache
+D:\modenWebStack\00 SkillsApi\SkillsApi\SkillsApi\obj\Debug\netcoreapp2.1\SkillsApi.dll
+D:\modenWebStack\00 SkillsApi\SkillsApi\SkillsApi\obj\Debug\netcoreapp2.1\SkillsApi.pdb
