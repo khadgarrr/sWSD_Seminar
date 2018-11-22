@@ -66,7 +66,7 @@ Injectables sind SingletonPatterns mit Potential zu package spezifischen Singlet
 
 Service Pattern sollte man sich angewöhnen.
 
-Angular structured Directives Bsp.: \*ngFor
+Angular Structured Directives Bsp.: \*ngFor
 
 Praktische Extension für VSCode AngularLanguageService
 
@@ -135,3 +135,151 @@ Es gibt einige Webcomponent Frameworks mit der Komponenten erstellt werden könn
 Die modernere Variante für Mobile Development _Native Script_
 
 Such mal nach nodeJS und raspberry pi
+
+# Extensions
+
+## VS Live Share
+
+Hier kann man mit einem anderen Entwickler live Code bearbeiten
+Tip des Trainers
+
+# Mediaqueries
+
+Im Kontext mit _Responsive Designs_ benutzt men Mediaqueries um die App an die aktuelle Auflösung anzupassen.
+Tip des Trainers: VS-Code Extension _Peek-CSS_
+
+Als _Holy Grail_ bezeichnet man das weitverbreitete Header - LeftNav - Main - RightNav - Footer Konzept
+
+_Mobile First_ ist ein Konzept bei dem die Entwicklung der mobilen Devices im Vordergrund steht, die Versionen für größere Systeme funktionieren dann meistens analog.
+
+# Bootstrap
+
+http://getbootstrap.com/
+
+http://getbootstrap.com/docs/4.1/layout/grid/
+
+Ist ein typisches UI Framework, sie vereinfachen das Aufbereiten des Inhalts für den Benutzer.
+
+Große Errungenschaft _Grid Layout_
+
+Mobile Breakpoints mit .col-xs-_ und .col-md-_ für Monitore
+
+Fast jeder größere Hersteller hat ein Grid-System
+
+Office UI Fabric ist das Boorstrap von Microsoft
+
+Das Gridsystem wird von etwas (besserem?) ersetzt und zwar Flexbox. Es sorgt dafür, dass sich ein Container wie ein Container verhält.
+Wenn ich rein mit Flexbox formatiere habe ich viel weniger DIVs als mit Bootstrap. Mit Flexbox ist das 1 Container weniger. Bootstrap 4 verwendet Flexbox aber sie brauchen immer noch das alte Containersystem.
+
+[Bootstrap Docs](https://getbootstrap.com/docs/)
+
+Ein guter Visueller Guide:\
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Tipp des Trainers: css-tricks.com ist eine gute Ressource
+
+Mit diesen beiden Links kann man ein responsive design anlegen.
+Beispiel für diese Technologien ist das Projekt 06 UI\HolyGrail
+
+Bei Bootstrap muss ich keine Größe für das Gridsystem angeben col col-6 ist weitaus flexibler als das alte Gridsystem.
+Bootstrap ist mehr als ein Gridsystem, es hat auch sehr viele Controls. Laut Trainer hat es mehr Features als _Material Design_
+
+# Flex
+
+[Flex Playground](https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos/)
+
+[Angular Flex]() https://github.com/angular/flex-layout)
+
+Achtung, Flex unterstützt keine Mediaqueries
+
+# SASS
+
+[Synthetically Awsome Style Sheets](https://sass-lang.com/guide)
+
+Sass hat sich gegenüber scss durchgesetzt weil es dem normalen css näher steht.
+
+Verwendung von relativen Größenangaben ist guter Ton in SASS, vh - view heigt, vw - view width, em wird im Schriftsatz zur Bestimmung der Zeichenbreite in Abhängigkeit von der Schriftgröße verwendet, rem ist relativ zum aktuellen Kontainer.
+
+SCSS braucht einen Preprocessor.
+
+# Nestings
+
+Man schreibt Klassen ineinander anstatt nebeneinander
+
+```css
+nav {
+  ul {
+    width: 15px;
+    ...;
+  }
+}
+
+nav ul {
+  width: 15px;
+  ...;
+}
+```
+
+#
+
+```ts
+export class SkillsService {
+  client: httpClient;
+  arrSkills: Skill[] = [];
+  Skills: BehaviorSubject<Skill[] | []>;
+  /* Ein BehaviourObject stellt die Daten an mehreren Orten zur Verfügung ist eine spezielle Form des Observables 
+  BehaviourSubject informiert Subscruber über den letzten Datenstand */
+
+  constructor() {
+    this.client = new httpClient();
+    this.Skills = new BehaviorSubject(this.arrSkills);
+    this.client.getObservable<Skill[]>("skills.json").subscribe(data => {
+      this.arrSkills = data;
+      this.Skills.next(this.arrSkills);
+      /* mit next broadcastet der Observable die neuen Daten an den Observer
+      Mit next bekomme ich die neuen Daten */
+    });
+  }
+
+  addSkill(s: Skill) {
+    this.arrSkills.push(s);
+    this.Skills.next(this.arrSkills);
+  }
+}
+```
+
+# Progressive Web App
+
+https://developers.google.com/web/ilt/pwa/
+Further Reading: https://console.firebase.google.com
+
+Beispiel: 07 Real Time - PWA\smartSammlerPWA
+
+Anwendungen die im Browser geladen werden kann, im Idealfall kann sie mit Einschränkungen auch offline genutzt werden.
+
+Unterstützt durch Vue.js, Angular, React und Ionic
+
+Progressive Web app ist ein Webstandard. Durch ein paar Handgriffe kann eine bestehende App in eine Progressive Web App umgewandelt werden.
+
+Lighthouse ist eine Platform mit der das Rating einer PWA erstellt werden. Auch Google Chrome kann dieses Rating oder Score erstellen -> Tab Audits.
+
+Muss einen Service Worker registrieren, das kann nur über HTTPS gemacht werden.
+
+### Let's Encrypt
+
+Automaitsiertes Erstellen eines _Let's Encrypt_ Zertifikats. Link folgt noch...
+
+[Portproxy für Dev Test](https://ngrok.com/)
+
+## Portierung in eine PWA
+
+```bash
+ ng add @angular/pwa
+```
+
+Verwandelt ein Angular Projekt in ein PWA Projekt.
+
+manifest.json - Wie soll sich der Installer verhalten
+ngsw-config.json - Verhalten des _Service Workers_
+
+### Anmerkung des Trainers die Anordnung eines Projektes nach Typ (service...) ist nicht zu empfehlen.

@@ -1,0 +1,26 @@
+<h1>Hero List</h1>
+<div>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Skill Power</th>
+      <th>Strength</th>
+      <th>Pet</th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let hero of heroList">
+      <td>{{ hero.id }}</td>
+      <td>{{ hero.name }}</td>
+      <td>{{ hero.powerSkill }}</td>
+      <td>{{ hero.strength }}</td>
+      <td>{{ hero.pet }}</td>
+      <td (click)="editHero(hero)">edit</td>
+    </tr>
+  </table>
+
+  <div *ngIf="currentHero">
+    <div>Edit Hero</div>
+    <input type="text" [value]="currentHero.name" />
+  </div>
+</div>
