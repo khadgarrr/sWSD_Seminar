@@ -1,0 +1,10 @@
+<h1>Using Token Auth</h1>
+
+<app-login></app-login>
+
+<app-register></app-register>
+
+<div>Test Secure Call:</div>
+<button color="accent" (click)="callWS()">Call Secured Webservice</button>
+<div>{{ resp | json }}</div>
+<div>{{ err }}</div>

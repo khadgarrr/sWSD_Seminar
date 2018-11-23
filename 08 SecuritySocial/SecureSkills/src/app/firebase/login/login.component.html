@@ -1,0 +1,20 @@
+<div class="formContainer">
+  <div>Please Log in:</div>
+
+  <div>
+    <input type="text" placeholder="Email Address" [(ngModel)]="login.email" />
+  </div>
+
+  <div>
+    <input
+      type="password"
+      placeholder="Enter Password"
+      [(ngModel)]="login.pwd"
+    />
+  </div>
+
+  <div fxLayout="row nowrap" fxLayoutGap="1.5rem">
+    <button (click)="logIn()" color="accent">Log In</button>
+    <button (click)="logOut()" color="accent">Log Off</button>
+  </div>
+</div>

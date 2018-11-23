@@ -1,0 +1,27 @@
+<div class="formContainer">
+  <div>Or register a new account:</div>
+
+  <div>
+    <input type="text" placeholder="Email Address" [(ngModel)]="login.email" />
+  </div>
+
+  <div>
+    <input
+      type="password"
+      placeholder="Enter Password"
+      [(ngModel)]="login.pwd"
+    />
+  </div>
+
+  <div>
+    <input
+      type="password"
+      placeholder="Re-Enter Password"
+      [(ngModel)]="login.pwd2"
+    />
+  </div>
+
+  <div fxLayout="row nowrap" fxLayoutGap="1.5rem">
+    <button (click)="registerUser()" color="accent">Register</button>
+  </div>
+</div>

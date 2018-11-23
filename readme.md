@@ -38,6 +38,9 @@ MVC Pattern
 Sobald ich ein größeres -Projekt angehe brauche ich einen State, das bedeutet ein Model. Components sind eher für Steuerung und View zuständig.
 
 Mittels Router kann man mehrere Seiten in eine SPA einbauen und ansteuern.
+URLs oder andere Konstanten in Angular sollten in die
+**environments/environment.ts** oder
+**environments/environment.prod.ts**
 
 ## Angular cli
 
@@ -269,7 +272,12 @@ Muss einen Service Worker registrieren, das kann nur über HTTPS gemacht werden.
 
 Automaitsiertes Erstellen eines _Let's Encrypt_ Zertifikats. Link folgt noch...
 
+Wenn eine WebAPI nur über https Antworten liefert braucht man ein Tool das einen Entwickler schnell und gratis einen https Proxy erstellt.
 [Portproxy für Dev Test](https://ngrok.com/)
+
+Gutes Microsoft IIS Tool dafür: https://certytytheweb.com
+
+NPM Package: Greenlock https://www.npmjs.com/package/greenlock
 
 ## Portierung in eine PWA
 
@@ -283,3 +291,40 @@ manifest.json - Wie soll sich der Installer verhalten
 ngsw-config.json - Verhalten des _Service Workers_
 
 ### Anmerkung des Trainers die Anordnung eines Projektes nach Typ (service...) ist nicht zu empfehlen.
+
+# Token basierte Authentifizierung
+
+Simple OAuth Stelle https://firebase.google.com
+
+Ein Token wird vom Authentication Provider ausgestellt, ver/entschlüsselt und zum client/server geschickt https://jwt.io kann man sich einen Token ansehen.
+
+Bei der Authentifizierung (Identity Provider) wird ein Token erstellt in dem bestimmte Informationen enthalten sind. Der Token wird beim Client nicht entschlüsselt sondern enthält nur Informationen für den Server.
+
+## Standard OpenID Connect
+
+### Active Directory Passthrough
+
+Ich installiere einen Agent auf meinem lokalen Server und der baut mir einen Tunnel ins AzureAD auf. Jeder Request auf meinen Server wird auf Azure AD weitergeleitet.
+
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta
+
+Empfohlener Youtube Channel: Microsoft Mechanics
+
+Tokenbasierte Authentifizierungen sollten nicht selbst implementiert werden da man sich zu einer hohen Wahrscheinlichkeit eine Sicherheitslücke einbaut.
+
+#
+
+Wir beginnen damit auf die Docs von Microsoft zuzugreifen https://docs.microsoft.com/en-us/aspnet/core/security/authorization/limitingidentitybyscheme?view=aspnetcore-2.1&tabs=aspnetcore2x
+
+In der API sucht man sich dann die entsprechenden Libraries und registriert sie im Falle von .net core in der Api.csproj Wenn ich eine Azure Authentifizierung will dann die Azure Komponente...
+
+In der Startup.cs muss Die Authentication eingerichtet werden.
+
+### Angular
+
+In Angular muss dann in der app.module.ts die Config erstellt werden.
+
+export const firebaseConfig...
+der Code stammt von firebase -> go to console ...
+
+Hier gibt es einen Interceptor der sich an jeden http Request anhängt. Hier hängt man den Security Token an den Header an.
